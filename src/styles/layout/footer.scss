@@ -1,0 +1,56 @@
+$duration: 10s;
+.footer{
+    background:#161618;
+    padding:25px 0;
+    overflow-x:hidden;
+    @media only screen and (min-width : $ipad){
+        padding:50px 0;
+    }
+    &--menu{
+        width: 100%;
+        overflow: hidden;
+        background-color: #161618; 
+        padding-left: 100%;
+        box-sizing: content-box;
+        .ticker{ 
+            display: inline-block;
+            height: 4rem;
+            line-height: 4rem;  
+            white-space: nowrap;
+            padding:0 100% 0 0;
+            margin:0px;
+            box-sizing: content-box;
+            list-style: none;
+            -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-name: ticker;
+            animation-name: ticker;
+            -webkit-animation-duration: $duration;
+            animation-duration: $duration;
+            &:hover{
+                animation-play-state: paused;
+            }
+            li{
+                display:inline-block;
+                margin:0 15px;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                @include responsive-font-size (
+                    $min-font-size: 0.8em,
+                    $max-font-size: 1em,
+                    $min-screen-width: 640px,
+                    $max-screen-width: 1200px,
+                    $font-size-step: 0.1em /* optional, default: 0.1em */
+                );
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

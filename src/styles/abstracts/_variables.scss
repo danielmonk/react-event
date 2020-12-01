@@ -1,0 +1,30 @@
+// ** FONTS ** //
+$f-helvetica: 'Helvetica', sans-serif;
+
+$f-title:                           $f-helvetica;
+$f-body:                            $f-helvetica;
+
+// ** COLOURS ** //
+
+$dm-purple: #5031a9;
+$dm-purple-2: #6B21D4;
+$dm-pink:#f14279;
+$dm-yellow:#f4d146;
+$dm-green:#3fb869;
+$dm-blue:#00c4cc;
+
+
+// ** BREAKPOINTS ** //
+
+$mobile: 767px;
+$mobile-max: calc($mobile - 1px);
+$ipad: 768px;
+$ipad-max: calc($ipad - 1px);
+$breakpoint: /* 860px; */ 1024px;
+$breakpoint-max: calc($breakpoint - 1px);
+$large-breakpoint: 1100px;
+$large-breakpoint-max: calc($large-breakpoint - 1px);
+$xl-breakpoint: 1920px;
+$xl-breakpoint-max: calc($xl-breakpoint - 1px);
+$max-width: 1400px;
+$max-width-max: calc($max-width-max: - 1px);

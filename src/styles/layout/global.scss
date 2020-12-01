@@ -1,0 +1,86 @@
+
+html{
+  //overflow-x:hidden;
+}  
+body{
+    overflow-x: hidden;
+    margin: 0;
+    color: #fff;
+    //background: #0e0d10;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:14px;
+    font-family: $f-body, sans-serif;
+    @media(min-width: $breakpoint) {
+      //cursor:none;
+    }
+}
+.aligner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.background_cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// content wrapper
+.content--wrapper{
+  padding:0 15px;
+  position: relative;
+  @media(min-width: $breakpoint) {
+    
+  }
+
+  @media(min-width: $large-breakpoint) {
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: wrap;
+    max-width:75%;
+    padding:0px;
+  }
+
+  @media(min-width: $xl-breakpoint) {
+    //max-width:1280px;
+  }
+}
+
+//page 
+page{
+  display: block;
+  background: #0e0d10;
+}
+
+//section
+section{
+  padding:0;
+  min-height:100vh;
+  display: flex;
+  align-items:center;
+  position: relative;
+  @media(min-width: $breakpoint) {
+    //padding:100px 0;
+  }
+}
+
+// trigger
+.trigger{
+  p{
+    display:none;
+  }
+}

@@ -1,0 +1,25 @@
+.loading{
+    background:$dm-purple;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    img{
+        margin: 0 auto;
+        max-width:125px;
+    }
+}
+body{
+    //overflow: hidden;
+    overflow-y:scroll;
+}
+body.loaded{
+    overflow-y:scroll;
+    .loading{
+        display: none
+    }
+}
